@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10 Etiquetas HTML</title>
+</head>
+<body>
+    <h1> 10 Etiquetas en HTML</h1>
+
+<h3>1. Video </h3>
+El elemento HTML incorpora un reproductor multimedia que permite reproducir videos en el documento. También se puede utilizar para contenido de audio, pero el elemento puede proporcionar una experiencia de usuario más adecuada.
+<br>
+<video width="300" height="200" controls>
+    <source src="Video.mp4" type="video/mp4"> 
+</video>
+
+<h3>2. Audio</h3>
+El elemento HTML se utiliza para incrustar contenido de sonido en los documentos. Puede contener una o más fuentes de audio, representadas mediante el atributo o el elemento: el navegador elegirá la más adecuada. 
+<br>
+<audio controls>
+    <source src="Audio.mp3" type="audio/mpeg">
+
+</audio>
+
+<h3>3. iFrame</h3>
+El elemento HTML representa un contexto de navegación anidado , que incorpora otra página HTML
+<br>
+<iframe
+  id="inlineFrameExample"
+  title="Inline Frame Example"
+  width="300"
+  height="200"
+  src="https://www.openstreetmap.org/export/embed.html?bbox=-0.004017949104309083%2C51.47612752641776%2C0.00030577182769775396%2C51.478569861898606&layer=mapnik">
+</iframe>
+
+<h3>4. Input</h3>
+El elemento HTML se utiliza para crear controles interactivos para formularios basados ​​en la web con el fin de aceptar datos del usuario; hay una amplia variedad de tipos de datos de entrada y widgets de control disponibles, según el dispositivo y el agente de usuario . El elemento es uno de los más potentes y complejos de todo HTML debido a la gran cantidad de combinaciones de tipos de entrada y atributos.
+<br>
+<br>
+<label for="name">Name (4 to 8 characters):</label>
+
+<input type="text" id="name" name="name" required minlength="4" maxlength="8" size="10" />
+
+<h3>5. Legend</h3>
+El elemento HTML representa un título para el contenido de su elemento padre .
+
+<fieldset>
+    <legend>Choose your favorite monster</legend>
+  
+    <input type="radio" id="kraken" name="monster" value="K" />
+    <label for="kraken">Kraken</label><br />
+  
+    <input type="radio" id="sasquatch" name="monster" value="S" />
+    <label for="sasquatch">Sasquatch</label><br />
+  
+    <input type="radio" id="mothman" name="monster" value="M" />
+    <label for="mothman">Mothman</label>
+  </fieldset>
+
+  <h3>6. Mark</h3>
+  El elemento HTML representa texto que está marcado o resaltado para fines de referencia o notación debido a la relevancia del pasaje marcado en el contexto circundante.
+  <br>
+
+  <p>Search results for "salamander":</p>
+
+<hr />
+
+<p>Several species of <mark>salamander</mark> inhabit the temperate rainforest of the Pacific Northwest.</p>
+
+<p>Most <mark>salamander</mark>s are nocturnal, and hunt for insects, worms, and other small creatures.</p>
+
+<h3>7. Ins</h3>
+El elemento HTML representa un intervalo de texto que se ha añadido a un documento. Puedes utilizar el elemento para representar de forma similar un intervalo de texto que se ha eliminado del documento.
+<br>
+<p>“You're late!”</p>
+<del>
+  <p>“I apologize for the delay.”</p>
+</del>
+<ins cite="../howtobeawizard.html" datetime="2018-05">
+  <p>“A wizard is never late …”</p>
+</ins>
+
+<h3>8. Summary</h3>
+El elemento HTML especifica un resumen, un título o una leyenda para el cuadro de divulgación de un elemento. Al hacer clic en el elemento, se alterna entre el estado abierto y cerrado del elemento principal .
+<br>
+<details>
+    <summary>I have keys but no doors. I have space but no room. You can enter but can’t leave. What am I?</summary>
+    A keyboard.
+  </details>
+  
+
+  <h3>9. Var</h3>
+  El elemento HTML representa el nombre de una variable en una expresión matemática o en un contexto de programación. Normalmente se presenta con una versión en cursiva del tipo de letra actual, aunque ese comportamiento depende del navegador.
+  <br>
+  <p>
+    The volume of a box is <var>l</var> × <var>w</var> × <var>h</var>, where <var>l</var> represents the length,
+    <var>w</var> the width and <var>h</var> the height of the box.
+  </p>
+
+
+  <h3>10. Progress</h3>
+  El elemento HTML muestra un indicador que muestra el progreso de finalización de una tarea, normalmente mostrado como una barra de progreso.
+  <br>
+
+  <label for="file">File progress:</label>
+
+<progress id="file" max="100" value="70">70%</progress>
+
+  
+</body>
+</html>
