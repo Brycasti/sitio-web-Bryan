@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertidor de temperatura</title>
+</head>
+<body>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 50px;
+            text-align: center;
+        }
+        .container {
+            margin-top: 20px;
+        }
+        input, select {
+            margin: 10px;
+            padding: 10px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Conversor de Temperatura</h1>
+    <div class="container">
+        <input type="number" id="inputValue" placeholder="Introduce un valor" />
+        <select id="inputUnit">
+            <option value="C">Celsius (°C)</option>
+            <option value="F">Fahrenheit (°F)</option>
+            <option value="K">Kelvin (K)</option>
+            <option value="R">Rankine (R)</option>
+        </select>
+        <select id="outputUnit">
+            <option value="C">Celsius (°C)</option>
+            <option value="F">Fahrenheit (°F)</option>
+            <option value="K">Kelvin (K)</option>
+            <option value="R">Rankine (R)</option>
+        </select>
+        <button onclick="convert()">Convertir</button>
+    </div>
+    <h2 id="result">Resultado: </h2>
+
+    <script src="Convertidor.js"></script>
+</body>
+</html>
